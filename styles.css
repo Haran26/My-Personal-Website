@@ -300,7 +300,7 @@ section:not(.hero) {
   height: 220px;
   /* margin: 10px 0; */
   margin-bottom: 40px;
-  border: 3px solid#333;
+  border: 3px solid #333;
   /* background-color: #dfdfdf; */
   font-size: 22px;
   color: var(--dark-color);
@@ -346,21 +346,6 @@ section:not(.hero) {
   text-align: center;
   padding: 30px;
 }
-
-/* .grad-cap {
-  width: 75px;
-}
-
-.uw-logo {
-  height: 60px;
-} */
-
-/* .uw-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-} */
 
 .timeline {
   position: relative;
@@ -431,67 +416,10 @@ section:not(.hero) {
   /* text-transform: uppercase; */
 }
 
-/* .info {
-  margin-bottom: 24rem;
-}
-
-.left {
-  bottom: 10px;
-  width: 33.3%;
-  float: left;
-}
-
-.left span {
-  font-family: var(--heading-font-family);
-  font-weight: 500;
-}
-
-.left h4:not(:first-child) {
-  padding-top: 3rem;
-}
-
-.middle {
-  bottom: 10px;
-  width: 33.3%;
-  float: left;
-}
-
-.middle h4 span {
-  font-family: var(--heading-font-family);
-  font-weight: 500;
-}
-
-.middle h4:not(:first-child) {
-  padding-top: 3rem;
-}
-
-.right {
-  bottom: 10px;
-  width: 33.3%;
-  float: left;
-}
-
-.right h4 span {
-  font-family: var(--heading-font-family);
-  font-weight: 500;
-}
-
-.right h4:not(:first-child) {
-  padding-top: 3rem;
-} */
-
-/* .intro-description p:not(:last-child) {
-  margin-bottom: 2rem;
-} */
-
 .intro-description {
   font-size: 2.4rem;
   color: var(--dark-color);
 }
-
-/* .intro-description p {
-  font-weight: 300;
-} */
 
 .intro-description p span {
   font-weight: bold;
@@ -549,46 +477,13 @@ section:not(.hero) {
   border-bottom: 3px solid transparent;
   position: relative;
 }
-
-/* .grid-item.orange {
-  border-bottom-color: var(--orange-color);
-} */
-
 .grid-item.blue {
   border-bottom-color: var(--blue-color);
 }
 
-/* .grid-item.yellow {
-  border-bottom-color: var(--yellow-color);
-} */
-
 .grid-item.purple {
   border-bottom-color: var(--purple-color);
 }
-
-/* .grid-item.green {
-  border-bottom-color: var(--green-color);
-}
-
-.grid-item.pink {
-  border-bottom-color: var(--pink-color);
-}
-
-.orange i {
-  color: var(--orange-color);
-} */
-
-/* .blue i {
-  color: var(--blue-color);
-} */
-
-/* .yellow i {
-  color: var(--yellow-color);
-} */
-
-/* .purple i {
-  color: var(--purple-color);
-} */
 
 .item-icon {
   display: block;
@@ -915,16 +810,6 @@ section:not(.hero) {
   padding: 1rem 5rem;
 }
 
-/* Contact styles */
-/* .contact-info-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact-info {
-  flex-basis: 45%;
-} */
-
 .contact-info-item {
   display: flex;
   align-items: center;
@@ -959,30 +844,6 @@ section:not(.hero) {
   color: #5f5f5f;
 }
 
-/* .contact-form {
-  flex: 1;
-}
-
-.contact-form .input,
-.contact-form textarea {
-  width: 100%;
-  background-color: var(--light-gray-color);
-  font-family: var(--body-font-family);
-  color: var(--body-font-color);
-  font-size: 1.4rem;
-  letter-spacing: 1px;
-  border: none;
-  border-radius: 3px;
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
-
-.contact-form .btn {
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-} */
-
 .contact-flexbox-container {
   display: flex;
   /* justify-items: center; */
@@ -990,12 +851,7 @@ section:not(.hero) {
 }
 
 .contact-flexbox-item {
-  /* width: 50vw; */
   height: 190px;
-  /* margin: 10px 0; */
-  /* margin-bottom: 40px; */
-  /* border: 3px solid#333;
-  background-color: #dfdfdf; */
   font-size: 22px;
 }
 
