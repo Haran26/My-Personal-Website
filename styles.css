@@ -1073,7 +1073,7 @@ section:not(.hero) {
   cursor: pointer;
   padding: 10px;
   font-family: var(--body-font-family);
-  font-size: 18px;
+  font-size: 1.8rem;
   background-color: #262626;
   color: var(--light-color);
   transition: background-color 0.5s;
@@ -1090,12 +1090,12 @@ section:not(.hero) {
   justify-content: center;
   box-sizing: border-box;
   font-family: var(--body-font-family);
-  font-size: 18px;
+  font-size: 1.8rem;
   display: none;
   text-align: left;
   padding-left: 25px;
   padding-top: 70px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   padding-right: 25px;
 }
 
