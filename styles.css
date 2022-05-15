@@ -475,7 +475,7 @@ section:not(.hero) {
   gap: 2.5rem;
 }
 
-.my-expertise .grid-item {
+.my-tools .grid-item {
   background-color: #fff;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
   padding: 2rem;
@@ -1059,7 +1059,7 @@ section:not(.hero) {
 .tabContainer {
   width: 100%;
   height: fit-content;
-  padding-bottom: 6rem;
+  /* padding-bottom: 6rem; */
 }
 .tabContainer .buttonContainer {
   height: 15%;
