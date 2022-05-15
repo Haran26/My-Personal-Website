@@ -273,7 +273,7 @@ section:not(.hero) {
 
 .heading-group {
   color: var(--dark-color);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .section-head-small {
@@ -473,7 +473,6 @@ section:not(.hero) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 2.5rem;
-  padding-top: 3rem;
 }
 
 .my-expertise .grid-item {
@@ -802,6 +801,9 @@ section:not(.hero) {
 
 .info-item-icon i {
   margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-48%);
 }
 
 .data-wrapper {
@@ -820,12 +822,10 @@ section:not(.hero) {
 
 .contact-flexbox-container {
   display: flex;
-  /* justify-items: center; */
   flex-wrap: wrap;
 }
 
 .contact-flexbox-item {
-  height: 190px;
   font-size: 22px;
 }
 
@@ -836,6 +836,18 @@ section:not(.hero) {
 }
 
 .contact-flexbox-item-2 {
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.contact-flexbox-item-3 {
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.contact-flexbox-item-4 {
   flex-shrink: 0;
   flex-grow: 1;
   padding-left: 10px;
@@ -1047,8 +1059,7 @@ section:not(.hero) {
 .tabContainer {
   width: 100%;
   height: fit-content;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
 }
 .tabContainer .buttonContainer {
   height: 15%;
