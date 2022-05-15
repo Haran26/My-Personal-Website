@@ -27,6 +27,8 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -34,6 +36,8 @@ body {
   color: var(--body-font-color);
   font-size: var(--body-font-size);
   font-weight: 500;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -284,7 +288,7 @@ section:not(.hero) {
 }
 
 .section-head-large {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: var(--heading-font-family);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -685,14 +689,15 @@ section:not(.hero) {
 }
 
 .my-portfolio .grid-item {
-  min-height: 35rem;
+  height: 30rem;
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 
 .portfolio-item-image {
-  height: 35rem;
-  width: 35rem;
+  height: 30rem;
+  width: 30rem;
   object-fit: cover;
   top: 0;
   left: 0;
@@ -700,6 +705,8 @@ section:not(.hero) {
   margin-left: auto;
   margin-right: auto;
   border-radius: 75px;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-item-info {
@@ -805,7 +812,7 @@ section:not(.hero) {
 
 .info-item-data {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
