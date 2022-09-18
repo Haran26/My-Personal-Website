@@ -183,13 +183,19 @@ section:not(.hero) {
   transform: translate(-50%, -100%);
   font-size: 15vw;
   font-family: var(--heading-font-family);
-  color: var(--darker-color);
+  color: var(--light-color);
   z-index: 1;
   user-select: none;
 }
 
+.main .hero canvas {
+  position: absolute;
+  top: -25%;
+}
+
 .my-image {
-  max-width: 95%;
+  /* max-width: 95%; */
+  height: 60vh;
   user-select: none;
   -webkit-user-drag: none;
   margin-top: auto;
