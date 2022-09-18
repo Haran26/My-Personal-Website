@@ -152,15 +152,7 @@ var Nodes = {
           continue;
         }
 
-        var color =
-          "rgba(" +
-          colors[pixelPosition] +
-          "," +
-          colors[pixelPosition + 1] +
-          "," +
-          colors[pixelPosition + 2] +
-          "," +
-          "1)";
+        var color = "rgba(255,255,255)";
         this.points.push({
           x: j,
           y: i,
