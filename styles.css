@@ -1062,68 +1062,6 @@ section:not(.hero) {
   }
 }
 
-.tabContainer {
-  width: 100%;
-  height: fit-content;
-  /* padding-bottom: 6rem; */
-}
-.tabContainer .buttonContainer {
-  height: 15%;
-}
-.tabContainer .buttonContainer button {
-  width: 50%;
-  height: 100%;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
-  font-family: var(--body-font-family);
-  font-size: 1.8rem;
-  background-color: #262626;
-  color: var(--light-color);
-  transition: background-color 0.5s;
-}
-.tabContainer .buttonContainer button:hover {
-  background-color: var(--light-color);
-  color: #262626;
-}
-.tabContainer .tabPanel {
-  height: fit-content;
-  background-color: gray;
-  color: var(--light-color);
-  text-align: center;
-  justify-content: center;
-  box-sizing: border-box;
-  font-family: var(--body-font-family);
-  font-size: 1.8rem;
-  display: none;
-  text-align: left;
-  padding-left: 25px;
-  padding-top: 70px;
-  padding-bottom: 25px;
-  padding-right: 25px;
-}
-
-.tabContainer .tabPanel ul {
-  padding-left: 30px;
-}
-
-.brsmall {
-  display: block;
-  margin-bottom: 0.5em;
-}
-
-.brmedium {
-  display: block;
-  margin-bottom: 1em;
-}
-
-.brlarge {
-  display: block;
-  margin-bottom: 2em;
-}
-
 /* pc window */
 
 .fakeButtons {
