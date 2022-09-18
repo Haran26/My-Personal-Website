@@ -26,25 +26,25 @@ window.addEventListener("click", function (e) {
   }
 });
 
-var tabButtons = document.querySelectorAll(
-  ".tabContainer .buttonContainer button"
-);
-var tabPanels = document.querySelectorAll(".tabContainer  .tabPanel");
+// var tabButtons = document.querySelectorAll(
+//   ".tabContainer .buttonContainer button"
+// );
+// var tabPanels = document.querySelectorAll(".tabContainer  .tabPanel");
 
-function showPanel(panelIndex, colorCode) {
-  tabButtons.forEach(function (node) {
-    node.style.backgroundColor = "";
-    node.style.color = "";
-  });
-  tabButtons[panelIndex].style.backgroundColor = colorCode;
-  tabButtons[panelIndex].style.color = "#f4f4f4";
-  tabPanels.forEach(function (node) {
-    node.style.display = "none";
-  });
-  tabPanels[panelIndex].style.display = "block";
-  tabPanels[panelIndex].style.backgroundColor = colorCode;
-}
-showPanel(0, "#2f2f2f");
+// function showPanel(panelIndex, colorCode) {
+//   tabButtons.forEach(function (node) {
+//     node.style.backgroundColor = "";
+//     node.style.color = "";
+//   });
+//   tabButtons[panelIndex].style.backgroundColor = colorCode;
+//   tabButtons[panelIndex].style.color = "#f4f4f4";
+//   tabPanels.forEach(function (node) {
+//     node.style.display = "none";
+//   });
+//   tabPanels[panelIndex].style.display = "block";
+//   tabPanels[panelIndex].style.backgroundColor = colorCode;
+// }
+// showPanel(0, "#2f2f2f");
 
 // node image
 (function () {
@@ -348,3 +348,36 @@ var Nodes = {
 setTimeout(function () {
   Nodes.init();
 }, 10);
+
+(function () {
+  "use strict";
+
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+})();
