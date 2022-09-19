@@ -38,6 +38,7 @@ body {
   font-weight: 500;
   max-width: 100%;
   overflow-x: hidden;
+  background-color: var(--darker-color);
 }
 
 a {
@@ -300,7 +301,6 @@ section:not(.hero) {
 .section-head-large {
   font-size: 3.5rem;
   font-family: var(--heading-font-family);
-  text-transform: uppercase;
   letter-spacing: 0.5rem;
   text-align: center;
   font-weight: 700;
@@ -1102,23 +1102,21 @@ section:not(.hero) {
 }
 
 .fakeMenu {
-  width: 60vw;
+  width: 70vw;
   box-sizing: border-box;
   height: 25px;
   background-color: #bbb;
   margin: 0 auto;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  margin-top: 40px;
+  margin-top: 5vh;
 }
 
 .fakeScreen {
   background-color: var(--dark-color);
-  box-sizing: border-box;
-  width: 60vw;
+  width: 70vw;
   height: 70vh;
   margin: 0 auto;
-  /* margin-bottom: 80px; */
   padding: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1126,13 +1124,12 @@ section:not(.hero) {
 
 p {
   position: relative;
-  /* left: 50%; */
-  /* margin-left: -8.5em; */
   text-align: left;
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
+  margin-bottom: 20px;
 }
 
 span {
@@ -1140,68 +1137,152 @@ span {
   font-weight: bold;
 }
 
+/* 0-1.5s */
 .line1 {
-  font-size: 2vw;
-  color: #9cd9f0;
+  font-size: 1.9vw;
+  color: #00c8ff;
   -webkit-animation: type 0.5s 1s steps(20, end) forwards;
   -moz-animation: type 0.5s 1s steps(20, end) forwards;
   -o-animation: type 0.5s 1s steps(20, end) forwards;
   animation: type 0.5s 1s steps(20, end) forwards;
 }
 
+/* 2-2.5s */
 .cursor1 {
-  -webkit-animation: blink 1s 2s 2 forwards;
-  -moz-animation: blink 1s 2s 2 forwards;
-  -o-animation: blink 1s 2s 2 forwards;
-  animation: blink 1s 2s 2 forwards;
+  -webkit-animation: blink 1s 2s 1 forwards;
+  -moz-animation: blink 1s 2s 1 forwards;
+  -o-animation: blink 1s 2s 1 forwards;
+  animation: blink 1s 2s 1 forwards;
 }
 
+/* 3-3.5s */
 .line2 {
-  font-size: 2vw;
-  color: #cdee69;
-  -webkit-animation: type 0.5s 4.25s steps(20, end) forwards;
-  -moz-animation: type 0.5s 4.25s steps(20, end) forwards;
-  -o-animation: type 0.5s 4.25s steps(20, end) forwards;
-  animation: type 0.5s 4.25s steps(20, end) forwards;
+  font-size: 1.9vw;
+  color: #5eff00;
+  -webkit-animation: type 0.5s 3s steps(20, end) forwards;
+  -moz-animation: type 0.5s 3s steps(20, end) forwards;
+  -o-animation: type 0.5s 3s steps(20, end) forwards;
+  animation: type 0.5s 3s steps(20, end) forwards;
 }
 
-.cursor2 {
-  -webkit-animation: blink 1s 5.25s 2 forwards;
-  -moz-animation: blink 1s 5.25s 2 forwards;
-  -o-animation: blink 1s 5.25s 2 forwards;
-  animation: blink 1s 5.25s 2 forwards;
-}
+/* .cursor2 {
+  -webkit-animation: blink 1s 4s 2 forwards;
+  -moz-animation: blink 1s 4s 2 forwards;
+  -o-animation: blink 1s 4s 2 forwards;
+  animation: blink 1s 4s 2 forwards;
+} */
 
+/* 4-4.5s */
 .line3 {
-  font-size: 3.5vw;
-  color: #e09690;
-  -webkit-animation: type 0.5s 7.5s steps(20, end) forwards;
-  -moz-animation: type 0.5s 7.5s steps(20, end) forwards;
-  -o-animation: type 0.5s 7.5s steps(20, end) forwards;
-  animation: type 0.5s 7.5s steps(20, end) forwards;
+  font-size: 1.9vw;
+  color: #5eff00;
+  -webkit-animation: type 0.5s 3.5s steps(20, end) forwards;
+  -moz-animation: type 0.5s 3.5s steps(20, end) forwards;
+  -o-animation: type 0.5s 3.5s steps(20, end) forwards;
+  animation: type 0.5s 3.5s steps(20, end) forwards;
 }
 
+/* 4.5-5.5s */
 .cursor3 {
-  -webkit-animation: blink 1s 8.5s 2 forwards;
-  -moz-animation: blink 1s 8.5s 2 forwards;
-  -o-animation: blink 1s 8.5s 2 forwards;
-  animation: blink 1s 8.5s 2 forwards;
+  -webkit-animation: blink 1s 4.5s 1 forwards;
+  -moz-animation: blink 1s 4.5s 1 forwards;
+  -o-animation: blink 1s 4.5s 1 forwards;
+  animation: blink 1s 4.5s 1 forwards;
 }
 
+/* 6-6.5s */
 .line4 {
-  font-size: 3.5vw;
-  color: #fff;
-  -webkit-animation: type 0.5s 10.75s steps(20, end) forwards;
-  -moz-animation: type 0.5s 10.75s steps(20, end) forwards;
-  -o-animation: type 0.5s 10.75s steps(20, end) forwards;
-  animation: type 0.5s 10.75s steps(20, end) forwards;
+  font-size: 1.9vw;
+  color: #ff9d00;
+  -webkit-animation: type 0.5s 5.5s steps(20, end) forwards;
+  -moz-animation: type 0.5s 5.5s steps(20, end) forwards;
+  -o-animation: type 0.5s 5.5s steps(20, end) forwards;
+  animation: type 0.5s 5.5s steps(20, end) forwards;
 }
 
-.cursor4 {
-  -webkit-animation: blink 1s 11.5s infinite;
-  -moz-animation: blink 1s 8.5s infinite;
-  -o-animation: blink 1s 8.5s infinite;
-  animation: blink 1s 8.5s infinite;
+/* 7-8s */
+/* .cursor4 {
+  -webkit-animation: blink 1s 7s 1 forwards;
+  -moz-animation: blink 1s 7s 1 forwards;
+  -o-animation: blink 1s 7s 1 forwards;
+  animation: blink 1s 7s 1 forwards;
+} */
+
+.line5 {
+  font-size: 1.9vw;
+  color: #ff9d00;
+  -webkit-animation: type 0.5s 6s steps(20, end) forwards;
+  -moz-animation: type 0.5s 6s steps(20, end) forwards;
+  -o-animation: type 0.5s 6s steps(20, end) forwards;
+  animation: type 0.5s 6s steps(20, end) forwards;
+}
+
+/* 4.5-5.5s */
+.cursor5 {
+  -webkit-animation: blink 1s 7s 1 forwards;
+  -moz-animation: blink 1s 7s 1 forwards;
+  -o-animation: blink 1s 7s 1 forwards;
+  animation: blink 1s 7s 1 forwards;
+}
+
+.line6 {
+  font-size: 1.9vw;
+  color: #00c8ff;
+  -webkit-animation: type 0.5s 8s steps(20, end) forwards;
+  -moz-animation: type 0.5s 8s steps(20, end) forwards;
+  -o-animation: type 0.5s 8s steps(20, end) forwards;
+  animation: type 0.5s 8s steps(20, end) forwards;
+}
+
+.cursor6 {
+  -webkit-animation: blink 1s 9s 1 forwards;
+  -moz-animation: blink 1s 9s 1 forwards;
+  -o-animation: blink 1s 9s 1 forwards;
+  animation: blink 1s 9s 1 forwards;
+}
+
+.line7 {
+  font-size: 1.9vw;
+  color: #5eff00;
+  -webkit-animation: type 0.5s 10s steps(20, end) forwards;
+  -moz-animation: type 0.5s 10s steps(20, end) forwards;
+  -o-animation: type 0.5s 10s steps(20, end) forwards;
+  animation: type 0.5s 10s steps(20, end) forwards;
+}
+
+/* 4.5-5.5s */
+/* .cursor7 {
+  -webkit-animation: blink 1s 9.5s 1 forwards;
+  -moz-animation: blink 1s 9.5s 1 forwards;
+  -o-animation: blink 1s 9.5s 1 forwards;
+  animation: blink 1s 9.5s 1 forwards;
+}
+
+.line8 {
+  font-size: 2vw;
+  color: #5eff00;
+  -webkit-animation: type 0.5s 10.5s steps(20, end) forwards;
+  -moz-animation: type 0.5s 10.5s steps(20, end) forwards;
+  -o-animation: type 0.5s 10.5s steps(20, end) forwards;
+  animation: type 0.5s 10.5s steps(20, end) forwards;
+} */
+
+/* 6-6.5s */
+.endLine {
+  font-size: 1.9vw;
+  color: #fff;
+  -webkit-animation: type 0.5s 10.5s steps(20, end) forwards;
+  -moz-animation: type 0.5s 10.5s steps(20, end) forwards;
+  -o-animation: type 0.5s 10.5s steps(20, end) forwards;
+  animation: type 0.5s 10.5s steps(20, end) forwards;
+}
+
+/* 7-infty s */
+.endCursor {
+  -webkit-animation: blink 1s 11s infinite;
+  -moz-animation: blink 1s 11s infinite;
+  -o-animation: blink 1s 11s infinite;
+  animation: blink 1s 11s infinite;
 }
 
 @-webkit-keyframes blink {
@@ -1278,25 +1359,25 @@ span {
 
 @-webkit-keyframes type {
   to {
-    width: 17em;
+    width: 65vw;
   }
 }
 
 @-moz-keyframes type {
   to {
-    width: 17em;
+    width: 65vw;
   }
 }
 
 @-o-keyframes type {
   to {
-    width: 17em;
+    width: 65vw;
   }
 }
 
 @keyframes type {
   to {
-    width: 17em;
+    width: 65vw;
   }
 }
 
