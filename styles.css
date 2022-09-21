@@ -1515,8 +1515,28 @@ body {
   transition: background 0.5s ease-in-out;
 }
 
-.timeline ul li.in-view::after {
-  background: var(--dark-color);
+.timeline ul li.in-view:nth-child(1)::after {
+  background: var(--light-color);
+  background-image: url("./images/relay.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.timeline ul li.in-view:nth-child(2)::after {
+  background: var(--light-color);
+  background-image: url("./images/opentext.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.timeline ul li.in-view:nth-child(3)::after {
+  background: var(--light-color);
+  background-image: url("./images/yuja.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .timeline ul li div {
