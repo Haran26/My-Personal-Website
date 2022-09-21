@@ -1627,3 +1627,50 @@ body {
     transform: translateX(-50%) scale(1);
   }
 }
+
+/* hover text bubbles tools and frameworks */
+
+.tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 5vw;
+  background-color: var(--dark-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5vw 0.5vw;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-5vw);
+  font-size: 1vw;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 1vw solid;
+  border-color: var(--dark-color) #0000 #0000 #0000;
+}
+
+.vertical-line {
+  display: inline-block;
+  border-left: 0.1vw solid #626158;
+  margin-left: 0.5vw;
+  height: 3.3vw;
+  opacity: 60%;
+}
