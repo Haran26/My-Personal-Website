@@ -1374,7 +1374,6 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline {
   position: relative;
-  /* height: 100vh; */
 }
 
 .timeline ul li {
@@ -1383,21 +1382,103 @@ body {
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: var(--dark-color);
+  background: var(--light-color);
   color: var(--light-color);
 }
 
-.timeline ul li::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: inherit;
-  z-index: 1;
+/* circles with company images */
+@media (max-width: 609px) {
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+    z-index: 1;
+  }
+
+  .timeline ul li.in-view:nth-child(1)::after {
+    background: var(--light-color);
+    background-image: url("./images/relay.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .timeline ul li.in-view:nth-child(2)::after {
+    background: var(--light-color);
+    background-image: url("./images/opentext.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .timeline ul li.in-view:nth-child(3)::after {
+    background: var(--light-color);
+    background-image: url("./images/yuja.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .timeline ul li:nth-child(odd) div {
+    left: 45px;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -439px;
+  }
+}
+
+@media (min-width: 610px) {
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 25%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: inherit;
+    z-index: 1;
+  }
+
+  .timeline ul li.in-view:nth-child(1)::after {
+    background: var(--light-color);
+    background-image: url("./images/relay.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .timeline ul li.in-view:nth-child(2)::after {
+    background: var(--light-color);
+    background-image: url("./images/opentext.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .timeline ul li.in-view:nth-child(3)::after {
+    background: var(--light-color);
+    background-image: url("./images/yuja.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .timeline ul li:nth-child(odd) div {
+    left: 55px;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -449px;
+  }
 }
 
 .timeline ul li div {
@@ -1405,7 +1486,6 @@ body {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: var(--dark-color);
   border-color: var(--light-color);
   border-style: solid;
 }
@@ -1419,9 +1499,9 @@ body {
   border-style: solid;
 }
 
-.timeline ul li:nth-child(odd) div {
+/* .timeline ul li:nth-child(odd) div {
   left: 45px;
-}
+} */
 
 .timeline ul li:nth-child(odd) div::before {
   left: -16px;
@@ -1429,9 +1509,9 @@ body {
   border-color: transparent var(--light-color) transparent transparent;
 }
 
-.timeline ul li:nth-child(even) div {
+/* .timeline ul li:nth-child(even) div {
   left: -439px;
-}
+} */
 
 .timeline ul li:nth-child(even) div::before {
   right: -16px;
@@ -1448,30 +1528,6 @@ body {
 
 .timeline ul li::after {
   transition: background 0.5s ease-in-out;
-}
-
-.timeline ul li.in-view:nth-child(1)::after {
-  background: var(--light-color);
-  background-image: url("./images/relay.png");
-  background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: left center;
-}
-
-.timeline ul li.in-view:nth-child(2)::after {
-  background: var(--light-color);
-  background-image: url("./images/opentext.png");
-  background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: left center;
-}
-
-.timeline ul li.in-view:nth-child(3)::after {
-  background: var(--light-color);
-  background-image: url("./images/yuja.png");
-  background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: left center;
 }
 
 .timeline ul li div {
@@ -1503,7 +1559,6 @@ body {
   }
   .timeline ul li:nth-child(even) div {
     left: -289px;
-    /*250+45-6*/
   }
 }
 
