@@ -997,6 +997,19 @@ section:not(.hero) {
   }
 }
 
+/* pill for tools in timeline */
+.timeline button {
+  background-color: transparent;
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+  font-size: 13px;
+  padding: 5px 5px;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-top: 5px;
+  font-family: var(--heading-font-family);
+}
+
 @media screen and (orientation: landscape) and (max-width: 1000px) {
   .nav {
     overflow-y: scroll;
@@ -1360,7 +1373,7 @@ span {
   align-items: center;
 }
 .dock img {
-  width: 3.25vw;
+  width: 2.85vw;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -1488,6 +1501,13 @@ span {
   padding: 15px;
   border-color: var(--light-color);
   border-style: solid;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.timeline ul li div:visited {
+  color: var(--light-color);
+  text-decoration: none;
 }
 
 .timeline ul li div::before {
