@@ -1079,7 +1079,7 @@ p {
   text-align: left;
   font-family: monospace;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 0;
   margin-bottom: 20px;
 }
@@ -1139,7 +1139,7 @@ span {
 
 .line4 {
   font-size: 1.9vw;
-  color: #ff9d00;
+  color: #ae00ff;
   -webkit-animation: type 0.5s 5.5s steps(20, end) forwards;
   -moz-animation: type 0.5s 5.5s steps(20, end) forwards;
   -o-animation: type 0.5s 5.5s steps(20, end) forwards;
@@ -1156,7 +1156,7 @@ span {
 
 .line5 {
   font-size: 1.9vw;
-  color: #ff9d00;
+  color: #ae00ff;
   -webkit-animation: type 0.5s 6s steps(20, end) forwards;
   -moz-animation: type 0.5s 6s steps(20, end) forwards;
   -o-animation: type 0.5s 6s steps(20, end) forwards;
@@ -1204,7 +1204,7 @@ span {
 
 .line8 {
   font-size: 2vw;
-  color: #ff9d00;
+  color: #ae00ff;
   -webkit-animation: type 0.5s 12s steps(20, end) forwards;
   -moz-animation: type 0.5s 12s steps(20, end) forwards;
   -o-animation: type 0.5s 12s steps(20, end) forwards;
@@ -1220,7 +1220,7 @@ span {
 
 .line9 {
   font-size: 2vw;
-  color: #ff9d00;
+  color: #ae00ff;
   -webkit-animation: type 0.5s 12.5s steps(20, end) forwards;
   -moz-animation: type 0.5s 12.5s steps(20, end) forwards;
   -o-animation: type 0.5s 12.5s steps(20, end) forwards;
