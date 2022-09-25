@@ -1079,7 +1079,7 @@ p {
   text-align: left;
   font-family: monospace;
   white-space: nowrap;
-  /* overflow: hidden; */
+  overflow: hidden;
   width: 0;
   margin-bottom: 20px;
 }
