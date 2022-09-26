@@ -38,14 +38,15 @@ body {
   font-weight: 500;
   max-width: 100%;
   overflow-x: hidden;
-  background: linear-gradient(
+  /* background: linear-gradient(
     62deg,
     #a052ee,
     #5b3ce7,
     #23a6d5,
     #23d5ab,
     #23d538
-  );
+  ); */
+  background: linear-gradient(62deg, #a052ee, #41149c, #23a6d5, #23a6d5);
   animation: gradient 5s ease infinite;
   background-size: 400% 400%;
 }
