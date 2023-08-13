@@ -1419,7 +1419,7 @@ span {
 
   .timeline ul li.in-view:nth-child(1)::after {
     background: var(--light-color);
-    background-image: url("./images/relay.png");
+    background-image: url("./images/zanbato.png");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: left center;
@@ -1427,13 +1427,21 @@ span {
 
   .timeline ul li.in-view:nth-child(2)::after {
     background: var(--light-color);
-    background-image: url("./images/opentext.png");
+    background-image: url("./images/relay.png");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: left center;
   }
 
   .timeline ul li.in-view:nth-child(3)::after {
+    background: var(--light-color);
+    background-image: url("./images/opentext.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .timeline ul li.in-view:nth-child(4)::after {
     background: var(--light-color);
     background-image: url("./images/yuja.png");
     background-size: 30px;
@@ -1466,7 +1474,7 @@ span {
 
   .timeline ul li.in-view:nth-child(1)::after {
     background: var(--light-color);
-    background-image: url("./images/relay.png");
+    background-image: url("./images/zanbato.png");
     background-size: 60px;
     background-repeat: no-repeat;
     background-position: left center;
@@ -1474,13 +1482,21 @@ span {
 
   .timeline ul li.in-view:nth-child(2)::after {
     background: var(--light-color);
-    background-image: url("./images/opentext.png");
+    background-image: url("./images/relay.png");
     background-size: 60px;
     background-repeat: no-repeat;
     background-position: left center;
   }
 
   .timeline ul li.in-view:nth-child(3)::after {
+    background: var(--light-color);
+    background-image: url("./images/opentext.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .timeline ul li.in-view:nth-child(4)::after {
     background: var(--light-color);
     background-image: url("./images/yuja.png");
     background-size: 60px;
