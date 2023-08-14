@@ -1353,7 +1353,7 @@ span {
 /* dock for tools and frameworks */
 .glass {
   width: 78vw;
-  height: 5vw;
+  height: 3vw;
   background: rgba(238, 238, 238, 0.489);
   display: flex;
   justify-content: center;
@@ -1376,7 +1376,7 @@ span {
   align-items: center;
 }
 .dock img {
-  width: 2.8vw;
+  width: 2.1vw;
   padding-left: 5px;
   padding-right: 5px;
 }
